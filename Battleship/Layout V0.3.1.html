@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title> Battleship </title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link type="text/css" rel="stylesheet" href="Layout_CSS_V0.3.css"/>
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' /> 
+</head>
+
+<body style="background-color: grey;">
+<div id="AllContent">
+
+  <div id="gameScreen">
+    <div class="screenTitle">
+		<img src="Images/BattleshipTitle.PNG" alt="BATTLESHIP" class="titleImg">
+    </div>
+    <div id="innerBox">
+	<div id="progressBar">
+		<div id="shipDisplay"> <img src="Images/ships.PNG" alt="SHIP"></div>
+		<div id="shipDisplayTextbox"><img id="shipsLeft" src="Images/3.PNG" alt="Ship"></div>
+		<div id="attemptsDisplay"> <img src="Images/Attempts.PNG" alt="ATTEMPTS"></div>
+		<div id="attempsDisplayTextBox"><img id="attemptsLeft" src="Images/5.PNG" alt="Attempts"></div>
+	</div>
+	
+	<div id="gameGrid">
+		<table>
+  		    <tr>
+			<td id="00" onclick = "checkGuess(this.id)"></td><td id="01" onclick = "checkGuess(this.id)"></td><td id="02" onclick = "checkGuess(this.id)"></td><td id="03" onclick = "checkGuess(this.id)"></td><td id="04" onclick = "checkGuess(this.id)"></td><td id="05" onclick = "checkGuess(this.id)"></td><td id="06" onclick = "checkGuess(this.id)"></td><td id="07" onclick = "checkGuess(this.id)"></td></td><td id="08" onclick = "checkGuess(this.id)"></td><td id="09" onclick = "checkGuess(this.id)">
+		      </tr>
+		      <tr>
+			<td id="10" onclick = "checkGuess(this.id)"></td><td id="11" onclick = "checkGuess(this.id)"></td><td id="12" onclick = "checkGuess(this.id)"></td><td id="13" onclick = "checkGuess(this.id)"></td><td id="14" onclick = "checkGuess(this.id)"></td><td id="15" onclick = "checkGuess(this.id)"></td><td id="16" onclick = "checkGuess(this.id)"></td><td id="17" onclick = "checkGuess(this.id)"></td></td><td id="18" onclick = "checkGuess(this.id)"></td><td id="19" onclick = "checkGuess(this.id)">
+		      </tr>
+		      <tr>
+			<td id="20" onclick = "checkGuess(this.id)"></td><td id="21" onclick = "checkGuess(this.id)"></td><td id="22" onclick = "checkGuess(this.id)"></td><td id="23" onclick = "checkGuess(this.id)"></td><td id="24" onclick = "checkGuess(this.id)"></td><td id="25" onclick = "checkGuess(this.id)"></td><td id="26" onclick = "checkGuess(this.id)"></td><td id="27" onclick = "checkGuess(this.id)"></td></td><td id="28" onclick = "checkGuess(this.id)"></td><td id="29" onclick = "checkGuess(this.id)">
+		      </tr>
+		      <tr>
+			<td id="30" onclick = "checkGuess(this.id)"></td><td id="31" onclick = "checkGuess(this.id)"></td><td id="32" onclick = "checkGuess(this.id)"></td><td id="33" onclick = "checkGuess(this.id)"></td><td id="34" onclick = "checkGuess(this.id)"></td><td id="35" onclick = "checkGuess(this.id)"></td><td id="36" onclick = "checkGuess(this.id)"></td><td id="37" onclick = "checkGuess(this.id)"></td></td><td id="38" onclick = "checkGuess(this.id)"></td><td id="39" onclick = "checkGuess(this.id)">
+		      </tr>
+		      <tr>
+			<td id="40" onclick = "checkGuess(this.id)"></td><td id="41" onclick = "checkGuess(this.id)"></td><td id="42" onclick = "checkGuess(this.id)"></td><td id="43" onclick = "checkGuess(this.id)"></td><td id="44" onclick = "checkGuess(this.id)"></td><td id="45" onclick = "checkGuess(this.id)"></td><td id="46" onclick = "checkGuess(this.id)"></td><td id="47" onclick = "checkGuess(this.id)"></td></td><td id="48" onclick = "checkGuess(this.id)"></td><td id="49" onclick = "checkGuess(this.id)">
+		      </tr>
+		      <tr>
+			<td id="50" onclick = "checkGuess(this.id)"></td><td id="51" onclick = "checkGuess(this.id)"></td><td id="52" onclick = "checkGuess(this.id)"></td><td id="53" onclick = "checkGuess(this.id)"></td><td id="54" onclick = "checkGuess(this.id)"></td><td id="55" onclick = "checkGuess(this.id)"></td><td id="56" onclick = "checkGuess(this.id)"></td><td id="57" onclick = "checkGuess(this.id)"></td></td><td id="58" onclick = "checkGuess(this.id)"></td><td id="59" onclick = "checkGuess(this.id)">
+		      </tr>
+		      <tr>
+			<td id="60" onclick = "checkGuess(this.id)"></td><td id="61" onclick = "checkGuess(this.id)"></td><td id="62" onclick = "checkGuess(this.id)"></td><td id="63" onclick = "checkGuess(this.id)"></td><td id="64" onclick = "checkGuess(this.id)"></td><td id="65" onclick = "checkGuess(this.id)"></td><td id="66" onclick = "checkGuess(this.id)"></td><td id="67" onclick = "checkGuess(this.id)"></td></td><td id="68" onclick = "checkGuess(this.id)"></td><td id="69" onclick = "checkGuess(this.id)">
+		    </tr>
+		 </table>
+	</div>
+    <div id="footerProgress">
+		<div id="scoreDisplayImage"> <img src="Images/TotalScore.PNG" alt="TOTAL SCORE"></div>
+		<div id="scoreDisplay"class="shadow"></div>
+		<div id="backDiv"><a title="Quit current game" onclick="displayHome()"><img src="Images/Back.PNG" alt="BACK"></a></div>
+    </div>
+   </div>
+  </div>
+ 
+ <div id="displayResult" style="text-align:center;">
+	<p><img id="resultImage" src="Images/YouLost.PNG" alt="You Lost"></p></br></br>
+	<div id="scoreDisplayImage" style="text-align:center; padding-left:8%;"> <img src="Images/TotalScore.PNG" alt="SCORE"></div>
+	<div id="scoreDisplayResult" class="shadow" style="text-align:center;"></div></br>
+	<div ><a title="Go Back" onclick="displayHome()"><img id="bck" src="Images/Back.PNG" alt="BACK"></a></div></br>
+ </div>
+
+
+ <div id="instructionsScreen">
+	<div class="screenTitle" style="padding-top:80px;">
+	<p><img src="Images/Instructions.PNG" alt="Instructions" class="titleImg"></p>
+	<p><img src="Images/HowToPlay.PNG" alt="Instructions" class="titleImg"></p>
+	<div id="backDiv"><a title="Back" onclick="displayHome()"><img src="Images/Back.PNG" alt="BACK"></a></div>
+    </div>
+ </div>
+
+<div id="homeScreen">
+	<div class="screenTitle" style="padding-top:100px;">
+		<p><img src="Images/BattleshipTitleHome.PNG" alt="BATTLESHIP" class="titleImg"></p></br></br>
+		<p><a title="Click to start the game" id="startButton" onclick="displayGame()">
+				<img id="startImg" src="Images/Start.PNG" alt="START">
+			</a>
+		</p></br>
+		<p><a title="Click for instructions" id="instructionsButton" onclick="displayInstructions()">
+				<img id="instructionsImg" src="Images/Instructions.PNG" alt="INSTRUCTIONS">
+		</a></p>
+    </div>
+ </div>
+</div>
+<script src="Battleship_JS_V0.3.js"></script>
+</body>
+</html>
