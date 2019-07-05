@@ -1,5 +1,5 @@
 @media screen and (-ms-high-contrast: active), (-ms-high-contrast: none) {  
-   .tagline1 {
+   .portfolio-tagline {
   font-family: 'lato', sans-serif;
   font-size: 2em;
   font-weight: 300;
@@ -20,29 +20,12 @@
 
 body
 {
-background: linear-gradient(235deg, #c6cecc, #0c0d0d);
-background-size: 400% 400%;
-
-
+background: url("images/background-lights-1.jpeg") no-repeat;
+background-size: cover;
 -webkit-animation: AnimationName 27s ease infinite;
 -moz-animation: AnimationName 27s ease infinite;
 animation: AnimationName 27s ease infinite;
-}
-
-@-webkit-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
-@-moz-keyframes AnimationName {
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
-}
-@keyframes AnimationName { 
-    0%{background-position:0% 51%}
-    50%{background-position:100% 50%}
-    100%{background-position:0% 51%}
+height: 100%;
 }
 
 #AllContent
@@ -52,23 +35,14 @@ animation: AnimationName 27s ease infinite;
 	font-family: "Source Code Pro", Georgia;
   	font-size: 16px;
 	letter-spacing: 0.4px;
-
 	color: #e6ccb3;
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
-	background:black;
-	/*background: rgb(76,76,76);
-background: -moz-linear-gradient(-45deg,  rgba(76,76,76,1) 0%, rgba(102,102,102,1) 5%, rgba(102,102,102,1) 5%, rgba(0,0,0,1) 6%, rgba(17,17,17,1) 6%, rgba(44,44,44,1) 9%, rgba(43,43,43,1) 9%, rgba(0,0,0,1) 87%, rgba(28,28,28,1) 91%, rgba(19,19,19,1) 100%);
-background: -webkit-linear-gradient(-45deg,  rgba(76,76,76,1) 0%,rgba(102,102,102,1) 5%,rgba(102,102,102,1) 5%,rgba(0,0,0,1) 6%,rgba(17,17,17,1) 6%,rgba(44,44,44,1) 9%,rgba(43,43,43,1) 9%,rgba(0,0,0,1) 87%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
-background: linear-gradient(135deg,  rgba(76,76,76,1) 0%,rgba(102,102,102,1) 5%,rgba(102,102,102,1) 5%,rgba(0,0,0,1) 6%,rgba(17,17,17,1) 6%,rgba(44,44,44,1) 9%,rgba(43,43,43,1) 9%,rgba(0,0,0,1) 87%,rgba(28,28,28,1) 91%,rgba(19,19,19,1) 100%);
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', endColorstr='#131313',GradientType=1 );*/
-
+	background:rgba(0, 0, 0, 0.90);
 }
 
-
-
-.tagline1 {
+.portfolio-tagline {
   font-family: 'lato', sans-serif;
   font-size: 2em;
   font-weight: 300;
@@ -78,7 +52,6 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
   padding-top: 70px;
   text-shadow: 1px 1px black;
 }
-
 .TabHeader
 {
 	text-align:center;
@@ -88,54 +61,38 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#4c4c4c', end
   	text-transform: uppercase;
   	color: #d2a479;
 }
-
-
-.program
-{
-	text-align:left;
+.TabSubHeader {
+    text-align: left;
+    font-family: Abel, Arial;
+    font-size: 40px;
+    letter-spacing: 6px;
+    text-transform: none;
+    color: #d2a479;
 }
-
-#PortfolioDesc
+.sub-content-div
 {
 	width:85%;
 	margin-left:auto;
 	margin-right:auto;	
 }
-
-#contactdiv
-{
-	width:80%;
-	margin-left:auto;
-	margin-right:auto;
-}
-
-form
-{
-	text-align: left;
-}
-
 a:hover
 {
 	text-decoration:none !important;
 	color: #bbb !important;
 }
-
-
 .figure 
 {
-    
-    
 	border:5px ridge #d2a479;
 	text-align: center;
   	margin:auto;
   	display: table-cell;
   	vertical-align: middle;
-
 	width:14em;
 	height: 12em;
 	-webkit-transform: perspective(500);
 	-moz-transform: perspective(500);
 	transform: perspective(500);
+	transform-style: preserve-3d;
 	-webkit-transform-style: preserve-3d;
 	-moz-transform-style: preserve-3d;
 	-transform-style: preserve-3d;
@@ -144,39 +101,35 @@ a:hover
 	transition: .5s;
 }
 .figure:hover {
-    	-webkit-transform: perspective(500) rotateX(90deg) translateY(-6em) translateZ(6em);
-    	-moz-transform: rotateX(90deg) translateY(-6em) translateZ(6em);
+    -webkit-transform: perspective(500) rotateX(90deg) translateY(-6em) translateZ(6em);
+    -moz-transform: rotateX(90deg) translateY(-6em) translateZ(6em);
 	transform: perspective(500) rotateX(90deg) translateY(-6em) translateZ(6em);
 }
-
 .figure:hover img {
     box-shadow: none;
 }
 .figcaption {
 	border:5px ridge #d2a479;
 	padding-top:2em;
-    	height:12em;
+    height:12em;
 	display:block;
- 
-    	-webkit-transform: rotateX(-90deg);
+    -webkit-transform: rotateX(-90deg);
 	 -moz-transform: rotateX(-90deg);
 	transform: rotateX(-90deg);
-    	-webkit-transform-origin: 100% 0;
+    -webkit-transform-origin: 100% 0;
 	-moz-transform-origin: 100% 0;
-    	transform-origin: 100% 0;
-    	-webkit-transition: .5s;
+    transform-origin: 100% 0;
+    -webkit-transition: .5s;
 	 -moz-transition: .5s;
-    	transition: .5s;
+    transition: .5s;
 }
 .figure:hover .figcaption {
     box-shadow: 0 20px 15px -10px hsla(0,0%,0%,.25);
 }
-
 #Projects
 {
 	animation: fade-in 1s ease-in-out 2.8s;
 	animation-fill-mode: backwards; 
-	width:80%;
 }
 .quote-text { 
 	animation: fade-in 1s ease-in-out 1.8s;
@@ -351,4 +304,63 @@ a{
 {
 	color:red;
 	font-size:80%;
+}
+.contact-btns a {
+	margin: 0.6em 0em;
+}
+.contact-btns a img {
+    max-width: 100%;
+}
+.contact-btns a:hover { 
+    opacity:0.8;
+    transform: scale(1.1);
+}
+.sub-container {
+    margin-bottom: 4.5em;
+}
+span.fa.fa-star.unchecked{
+	color: #595757;
+}
+div#skillsDiv .quote-skills-left-brace {
+    animation: left-brace-intro 1s ease-in-out 3s;
+    animation-fill-mode: backwards;
+}
+div#skillsDiv .quote-skills-right-brace {
+    animation: right-brace-intro 1s ease-in-out 3s;
+	animation-fill-mode: backwards;
+}
+div#skillsDiv .quote-text { 
+	animation: fade-in 1s ease-in-out 4s;
+	animation-fill-mode: backwards; 
+}
+.section-margin{
+	margin-bottom:6%;
+}
+div#skillsDiv .TabSubHeader {
+    animation: fade-in 1s ease-in-out 3s;
+    animation-fill-mode: backwards;
+}
+div#ExpertiseDiv, .StoryDiv, div#timelineDiv {
+    animation: fade-in 1s ease-in-out 4s;
+    animation-fill-mode: backwards;
+}
+.TabSubSectionHeader {
+    text-align: left;
+    font-family: Abel, Arial;
+    font-size: 30px;
+    letter-spacing: 6px;
+    text-transform: none;
+    color: #d2a479;
+}
+.BlogHeader {
+    text-align: center;
+    font-family: Abel, Arial;
+    font-size: 50px;
+    letter-spacing: 10px;
+    text-transform: uppercase;
+    color: #d2a479;
+}
+.blog-container{
+	width: 90%;
+    margin-bottom: 3%;
 }
