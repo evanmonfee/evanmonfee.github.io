@@ -364,3 +364,9 @@ div#ExpertiseDiv, .StoryDiv, div#timelineDiv {
 	width: 90%;
     margin-bottom: 3%;
 }
+
+.fadeIn
+{
+	animation: fade-in 1s ease-in-out;
+	animation-fill-mode: backwards; 
+}
