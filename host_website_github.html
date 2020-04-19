@@ -1,121 +1,148 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-  <title> Evan Monfee </title>
+	<title> Evan Monfee </title>
 
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
 
-  <link type="text/css" rel="stylesheet" href="CSS_Portfolio_V1.css"/>
-  <link type="text/css" rel="stylesheet" href="CSS_Portfolio_V1_Mobile.css"/>
-  
+	<link href="assets/css/styles-mobile.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/styles-web.css" rel="stylesheet" type="text/css">
 
 
-  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
-  <link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet' type='text/css'>
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 
-  <!--script src="Script_Portfolio.js"></script-->
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet'
+		type='text/css'>
+
+	<!--script src="Script_Portfolio.js"></script-->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+
 <body style="background-color: grey;">
-<div id="AllContent">
+	<div id="AllContent">
 
 
-<!--Logo-->
-  <div id="logodiv" class="container-fluid center-block" style="background-color: black;">
-	<a id="Logo">
-		<img class="img-responsive center-block" src="Images/monfee_logo.jpg" alt="Logo"/>
-	</a>
-  </div>
-
-<!--Navigation-->
-<nav class="navbar navbar-inverse">
-  <div id="header" class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span> 
-      </button>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav">
-		<li><a id="Back" href="blog.html" title="Back to blog">
-			<span class="glyphicon glyphicon-arrow-left"></span> Blog
-		</a></li>
-      </ul>
-     </div>
-   </div>
-</nav>
-	
-
-<!--Portfolio-->  
-<section id="blogPostList">
-<div id="portfoliodiv" class="container-fluid" style="text-align=center;">
-	<h1 class="TabHeader" style="font-size: 50px;"> HOST YOUR SITE ONLINE USING GITHUB </h1>
-	<br/>
-	<div style="width:90%;margin-bottom:3%;" class="row center-block">
-		<img class="img-responsive center-block" src="Images/Blog_Images/github_page_9.png" alt="Host website using Github">
-		<br/>
-		
-		<div class="row blogwidth center-block">
-			<p class="text-left">
-			Host your own site for free using Github with a domain name of <em>yourdomain.github.io</em>. 
-			You can build elegant websites 
-			to showcase your portfolio, projects or anything else you want to share with the world.
-			<br/><br/>
-			Github serves all the sites from a personal URL tied to your Github username. 
-			The steps below detail how to create a site for windows using evanmonfee.github.io as the example.
-			<br/><br/>
-			</p>
-			<ol class="text-left">
-			<li>Get the HTML files for your web page ready.
-			<br/><br/>
-			<li>Create an account on Github with your username the same as the first part of your domain name i.e. <em>'evanmonfee'</em> in case of 
-			<em>evanmonfee.github.io</em>. Alternatively you may also choose to modify the username of your existing Github account. Github allows 
-			only one site per account, so accommodate accordingly.
-			<br/><br/>
-			<li>Create a new repository in Github. Your repository name should be <em>'yourusername.github.io'</em>.  
-			Make sure <em>‘yourusername’</em> in the repository name exactly matches your Github username, else it won’t work. 
-			In my case the repository name would be <i>‘evanmonfee.github.io’</i>.
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_1.jpg" alt="New repository">
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_2.jpg" alt="Repository name">
-			<br/><br/>
-			<li>Github uses git to host the pages. Download Github for windows 
-				<a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe" title="Download github">here.</a>
-			<br/><br/>
-			<li>Now open the downloaded Github application on your laptop and clone the repository you just created as shown. 
-			You will be asked to select the folder (in windows) where you want the files for your site to be stored at. 
-			For eg: <em>D:\evanmonfee.github.io</em>
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_3.jpg" alt="Clone repository">
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_4.jpg" alt="Folder name"><br/>
-			Once done your application would look like this:
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_5.jpg" alt="Application">
-			<br/><br/>
-			<li>Now right click on the repository and select ‘Open in Explorer’ as shown and paste all the files for your site there 
-			(your HTML, CSS, Images, etc.). Make sure you have an <em>index.html</em> file.
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_6.jpg" alt="Open in explorer"><br/>
-			Once done Github automatically detects the changes made. Enter a summary for the change and select “Commit to master”. 
-			Once committed select “Publish” at the top right corner of the Github window to make your changes live.
-			<br/><br/><img class="img-responsive center-block" src="Images/Blog_Images/github_page_7.jpg" alt="Commit and publish"><br/>
-			Github now starts syncing your changes. Once done navigate to the settings tab of your repository in your Github account online 
-			and check for the message <i>“Your site is published at <a href="http://www.evanmonfee.com">https://evanmonfee.github.io”</i></a>. In some cases it might take a while for the site 
-			to get updated.
-			<br/><br/>	
-			<li>That’s it. Now sit back and enjoy your custom site.
-			</ol>
-			<br/><br/>
-			<p style="font-size:80%; color: #d2a479;" class="text-left">Posted on: January 14, 2017</p>
+		<!--Logo-->
+		<div id="logodiv" class="container-fluid center-block" style="background-color: black;">
+			<a id="Logo">
+				<img class="img-responsive center-block" src="assets/images/monfee_logo.jpg" alt="Logo" />
+			</a>
 		</div>
-	</div>
-</div>	
-</section>
 
-</div>
-  			
+		<!--Navigation-->
+		<nav class="navbar navbar-inverse sticky-navbar">
+			<div id="header" class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a id="Back" href="blog.html" title="Back to blog">
+								<span class="glyphicon glyphicon-arrow-left"></span> Blog
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+
+		<!--Portfolio-->
+		<section id="blogPostList">
+			<div id="portfoliodiv" class="container-fluid" style="text-align=center;">
+				<h1 class="TabHeader" style="font-size: 50px;"> HOST YOUR SITE ONLINE USING GITHUB </h1>
+				<br />
+				<div style="width:90%;margin-bottom:3%;" class="row center-block">
+					<img class="img-responsive center-block" src="assets/images/Blog_Images/github_page_9.png"
+						alt="Host website using Github">
+					<br />
+
+					<div class="row blogwidth center-block">
+						<p class="text-left">
+							Host your own site for free using Github with a domain name of
+							<em>yourdomain.github.io</em>.
+							You can build elegant websites
+							to showcase your portfolio, projects or anything else you want to share with the world.
+							<br /><br />
+							Github serves all the sites from a personal URL tied to your Github username.
+							The steps below detail how to create a site for windows using evanmonfee.github.io as the
+							example.
+							<br /><br />
+						</p>
+						<ol class="text-left">
+							<li>Get the HTML files for your web page ready.
+								<br /><br />
+							<li>Create an account on Github with your username the same as the first part of your domain
+								name i.e. <em>'evanmonfee'</em> in case of
+								<em>evanmonfee.github.io</em>. Alternatively you may also choose to modify the username
+								of your existing Github account. Github allows
+								only one site per account, so accommodate accordingly.
+								<br /><br />
+							<li>Create a new repository in Github. Your repository name should be
+								<em>'yourusername.github.io'</em>.
+								Make sure <em>‘yourusername’</em> in the repository name exactly matches your Github
+								username, else it won’t work.
+								In my case the repository name would be <i>‘evanmonfee.github.io’</i>.
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_1.jpg" alt="New repository">
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_2.jpg" alt="Repository name">
+								<br /><br />
+							<li>Github uses git to host the pages. Download Github for windows
+								<a href="https://github-windows.s3.amazonaws.com/GitHubSetup.exe"
+									title="Download github">here.</a>
+								<br /><br />
+							<li>Now open the downloaded Github application on your laptop and clone the repository you
+								just created as shown.
+								You will be asked to select the folder (in windows) where you want the files for your
+								site to be stored at.
+								For eg: <em>D:\evanmonfee.github.io</em>
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_3.jpg" alt="Clone repository">
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_4.jpg" alt="Folder name"><br />
+								Once done your application would look like this:
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_5.jpg" alt="Application">
+								<br /><br />
+							<li>Now right click on the repository and select ‘Open in Explorer’ as shown and paste all
+								the files for your site there
+								(your HTML, CSS, Images, etc.). Make sure you have an <em>index.html</em> file.
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_6.jpg" alt="Open in explorer"><br />
+								Once done Github automatically detects the changes made. Enter a summary for the change
+								and select “Commit to master”.
+								Once committed select “Publish” at the top right corner of the Github window to make
+								your changes live.
+								<br /><br /><img class="img-responsive center-block"
+									src="assets/images/Blog_Images/github_page_7.jpg" alt="Commit and publish"><br />
+								Github now starts syncing your changes. Once done navigate to the settings tab of your
+								repository in your Github account online
+								and check for the message <i>“Your site is published at <a
+										href="http://www.evanmonfee.com">https://evanmonfee.github.io”</i></a>. In some
+								cases it might take a while for the site
+								to get updated.
+								<br /><br />
+							<li>That’s it. Now sit back and enjoy your custom site.
+						</ol>
+						<br /><br />
+						<p style="font-size:80%; color: #d2a479;" class="text-left">Posted on: January 14, 2017</p>
+					</div>
+				</div>
+			</div>
+		</section>
+
+	</div>
+	<script src="assets/js/main.js"></script>
 </body>
+
 </html>

@@ -20,7 +20,7 @@
 
 body
 {
-background: url("images/background-lights-1.jpeg") no-repeat;
+background: url("../images/background-lights-1.jpeg") no-repeat;
 background-size: cover;
 -webkit-animation: AnimationName 27s ease infinite;
 -moz-animation: AnimationName 27s ease infinite;
@@ -33,13 +33,30 @@ height: 100%;
 	width:80%;
 	min-height:100vh;
 	font-family: "Source Code Pro", Georgia;
-  	font-size: 16px;
-	letter-spacing: 0.4px;
+  	font-size: 15px;
+	/* letter-spacing: 0.4px; */
 	color: #e6ccb3;
 	margin-left:auto;
 	margin-right:auto;
 	text-align: center;
 	background:rgba(0, 0, 0, 0.90);
+}
+
+.section-quote{
+	font-weight: 300;
+    font-style: italic;
+	color: #bbb;
+	text-shadow: 1px 1px black;
+}
+
+.section-line{
+	height: 1px;
+	background-color: #bbb;
+}
+
+.grey-brace{
+	color: #bbb;
+    font-family: 'Roboto', sans-serif;
 }
 
 .portfolio-tagline {
@@ -64,12 +81,13 @@ height: 100%;
 .TabSubHeader {
     text-align: left;
     font-family: Abel, Arial;
-    font-size: 40px;
+    font-size: 32px;
     letter-spacing: 6px;
     text-transform: none;
-    color: #d2a479;
+	color: #d2a479;
+	font-variant-caps: petite-caps;
 }
-.sub-content-div
+.container-body
 {
 	width:85%;
 	margin-left:auto;
@@ -85,7 +103,7 @@ a:hover
 	border:5px ridge #d2a479;
 	text-align: center;
   	margin:auto;
-  	display: table-cell;
+  	/* display: table-cell; */
   	vertical-align: middle;
 	width:14em;
 	height: 12em;
@@ -157,13 +175,13 @@ a:hover
 }
 
 #quote-left-brace3 { 
-	margin-top:-0.4em;
+	/* margin-top:-0.4em; */
   	font-size: 110px;
 	animation: left-brace3-intro 1s ease-in-out 0.8s;
 	animation-fill-mode: backwards; 
 }
 #quote-right-brace3 { 
-	margin-top:-0.4em;
+	/* margin-top:-0.4em; */
   	font-size: 110px;
 	animation: right-brace3-intro 1s ease-in-out 0.8s;
 	animation-fill-mode: backwards; 
@@ -340,7 +358,7 @@ div#skillsDiv .TabSubHeader {
     animation: fade-in 1s ease-in-out 3s;
     animation-fill-mode: backwards;
 }
-div#ExpertiseDiv, .StoryDiv, div#timelineDiv {
+div#ExpertiseDiv, .StoryDiv, div#timelineDiv , #techStackContainer, #AboutContainer{
     animation: fade-in 1s ease-in-out 4s;
     animation-fill-mode: backwards;
 }
@@ -369,4 +387,62 @@ div#ExpertiseDiv, .StoryDiv, div#timelineDiv {
 {
 	animation: fade-in 1s ease-in-out;
 	animation-fill-mode: backwards; 
+}
+
+.vertical-center {
+	display: flex !important;
+	flex-direction: row;
+	align-items: center;
+	flex-flow: wrap;
+  }
+
+.custom-list {
+    padding-inline-start: 1em;
+    list-style-type: none;
+}
+
+.custom-list .glyphicon{
+    margin-right: 1em;
+    font-size: 12px;
+}
+
+.font-sm{
+	font-size:14px;
+}
+
+.cards p {
+    padding: 5px 0;
+}
+
+.cards img {
+    height: 50px;
+}
+
+.cards {
+	margin:1em;
+}
+
+.font-xs {
+    font-size: 12px;
+}
+
+.card-container {
+    border: 1px solid #333;
+    border-radius: 10px;
+    margin: 0 0.5em 0.5em 0;
+}
+
+.grey-text{
+	color: #bbb;
+}
+
+.sticky {
+	position: fixed !important;
+    top: 0;
+	width: 80%;
+	z-index: 1;
+}
+
+.img-icon{
+	height:50px;
 }
