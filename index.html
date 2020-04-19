@@ -1,32 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<title>Even Monfee</title>
 	<meta charset="UTF-8">
 	<meta content="width=device-width, initial-scale=1" name="viewport">
-	<link href="CSS_Portfolio_V1.css" rel="stylesheet" type="text/css">
-	<link href="CSS_Portfolio_V1_Mobile.css" rel="stylesheet" type="text/css">
 	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" rel="stylesheet" type="text/css">
-	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet" type="text/css">
+	<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+		type="text/css">
 	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css'>
 	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css'>
-	<link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet' type='text/css'>
-	<link rel="stylesheet" href="timeline.css">
-	
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet'
+		type='text/css'>
+	<link rel="stylesheet" href="assets/css/timeline.css">
+	<link href="assets/css/styles-mobile.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/styles-web.css" rel="stylesheet" type="text/css">
+
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
 </head>
+
 <body style="background-color: grey;">
 	<div id="AllContent">
-		<!--Logo-->
+		<!-- START - Logo-->
 		<div class="container-fluid center-block" id="logodiv" style="background-color: black;">
-			<a id="Logo"><img alt="Logo" class="img-responsive center-block" src="images/monfee_logo.jpg"></a>
-		</div><!--Navigation-->
-		
-		<nav class="navbar navbar-inverse">
+			<a id="Logo"><img alt="Logo" class="img-responsive center-block" src="assets/images/monfee_logo.jpg"></a>
+		</div>
+		<!-- END - Logo-->
+
+		<!-- START - Navigation-->
+		<nav class="navbar navbar-inverse sticky-navbar">
 			<div class="container-fluid" id="header">
 				<div class="navbar-header">
-					<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span class="icon-bar"></span> <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+					<button class="navbar-toggle" data-target="#myNavbar" data-toggle="collapse" type="button"><span
+							class="icon-bar"></span> <span class="icon-bar"></span> <span
+							class="icon-bar"></span></button>
 				</div>
 				<div class="collapse navbar-collapse" id="myNavbar">
 					<ul class="nav navbar-nav">
@@ -47,21 +55,21 @@
 					</ul>
 				</div>
 			</div>
-		</nav><!--About-->
-		<div class="container-fluid visible" id="aboutdiv">
+		</nav>
+		<!-- END - Navigation-->
+
+		<!--About-->
+		<div class="container-fluid visible container-body" id="aboutdiv">
 			<a id="About"></a>
 			<div class="row">
 				<div class="col-md-4">
 					<br>
 					<br>
-					<img alt="Profile Image" class="img-rounded" src="images/Prof_Image.jpg"><br>
+					<img alt="Profile Image" class="img-rounded" src="assets/images/Prof_Image.jpg"><br>
 					<br>
-					<p style="color: #bbb;"><span class="glyphicon glyphicon-map-marker"></span> Pondicherry, India</p><br>
+					<p style="color: #bbb;"><span class="glyphicon glyphicon-map-marker"></span> Pondicherry, India</p>
+					<br>
 				</div>
-				<!-- <div id="profileImages" class="col-md-3">
-					<img class="img-rounded profileSlides fadeIn" alt="Profile Image" src="images/prof-image-3.jpg"/>
-					<img class="img-rounded profileSlides fadeIn" alt="Profile Image" src="Images/prof-image-2.jpg"/><br/><br/><br/>
-				</div> -->
 				<div class="col-md-8">
 					<div class="portfolio-tagline">
 						the portfolio of
@@ -87,174 +95,256 @@
 					</div>
 				</div>
 			</div>
-		</div><!--Portfolio-->
+		</div>
+
+		<!--Portfolio-->
 		<section class="invisible" id="slide">
-			<div class="container-fluid" id="portfoliodiv" style="text-align:center;">
-				<h2 class="TabHeader">Portfolio</h2>
-				<div class="sub-content-div section-margin bottommargin" id="PortfolioDesc">
-					<div class="col-md-1" id="quote-left-brace3">
+			<div class="container-fluid container-body" id="portfoliodiv" style="text-align:center;">
+
+				<div class="sub-content-div vertical-center" id="PortfolioDesc">
+					<div class="col-md-1 grey-brace" id="quote-left-brace3">
 						{
 					</div>
-					<div class="col-md-10 quote-text section-margin">
-						"I seem to have been only like a boy playing on the seashore, and diverting myself in now and then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of truth lay all undiscovered before me." - Isaac Newton
+					<div class="col-md-10 quote-text section-quote">
+						"I seem to have been only like a boy playing on the seashore, and diverting myself in now and
+						then finding a smoother pebble or a prettier shell than ordinary, whilst the great ocean of
+						truth lay all undiscovered before me." - Isaac Newton
 					</div>
-					<div class="col-md-1" id="quote-right-brace3">
+					<div class="col-md-1 grey-brace" id="quote-right-brace3">
 						}
 					</div>
 				</div>
-				<!--Skills-->
-				<div class="sub-content-div col-md-10 col-md-offset-1" id="skillsDiv">
-					<h2 class="TabSubHeader">Skills</h2>
-					<div class="col-md-6 section-margin">
+				<div class="quote-text col-md-12 row section-margin">
+					<div class="col-md-6 col-md-offset-3 section-line"></div>
+				</div>
+
+				<div class="sub-content-div " id="skillsDiv">
+					<h2 class="TabSubHeader">Areas of Expertise</h2>
+					<div class="col-md-6">
 						<div class="text-left">
 							<p class="quote-skills-left-brace">{</p>
-							<p class="quote-text" style="padding-left:50px;">Angular;</p>
-							<p class="quote-text" style="padding-left:50px;">Java;</p>
-							<p class="quote-text" style="padding-left:50px;">Android SDK;</p>
-							<p class="quote-text" style="padding-left:50px;">SASS;</p>
+							<p class="quote-text" style="padding-left:50px;">Ideate and design applications;</p>
+							<p class="quote-text" style="padding-left:50px;">User Experience (UX) design;</p>
+							<p class="quote-text" style="padding-left:50px;">Web and mobile app development;</p>
+							<p class="quote-text" style="padding-left:50px;">Android native development;</p>
 							<p class="quote-skills-right-brace">}</p>
 						</div>
 					</div>
-					<div class="col-md-6 section-margin">
+					<div class="col-md-6">
 						<div class="text-left">
 							<p class="quote-skills-left-brace">{</p>
-							<p class="quote-text" style="padding-left:50px;">UI Design;</p>
-							<p class="quote-text" style="padding-left:50px;">Version Control;</p>
-							<p class="quote-text" style="padding-left:50px;">Agile Methodology;</p>
 							<p class="quote-text" style="padding-left:50px;">Design Thinking;</p>
+							<p class="quote-text" style="padding-left:50px;">Agile Methodology;</p>
+							<p class="quote-text" style="padding-left:50px;">Version Control;</p>
+							<p class="quote-text" style="padding-left:50px;">Product SDLC Management;</p>
 							<p class="quote-skills-right-brace">}</p>
 						</div><br>
 					</div>
 				</div>
-				
-				<!-- START About -->
-				<!-- <div class="sub-content-div bottommargin StoryDiv">
-					<h2 class="TabSubSectionHeader col-md-12">How It All Began</h2>
+
+				<div class="row section-margin" id="AboutContainer">
+					<div class="col-md-12">
+						<h2 class="TabSubHeader">About</h2>
+						<p class="grey-text text-left">Own and participate in the complete life-cycle of product
+							development with
+							a proven track record of delivering results. Possesses a unique blend of hands-on technical
+							knowledge, management and entrepreneurial experience. </p>
+					</div>
+				</div>
+
+				<!-- START - Technology Stack -->
+				<div id="techStackContainer" class="section-margin">
 					<div class="row">
 						<div class="col-md-12">
-							<p>
-								I vividly remember the day my mother bought a desktop for the house. Computers have always had an enigmatic appeal to me: From gaming to painting, browsing and networking, computers seemed more than just a means to an end. In it, you could create a world of your own and plunge at will. Every speck of imagination felt within the realms of possibility, and a click of the button away! And as a school kid, I sat in front of my computer for hours, much to my sister’s dismay! As computer science classes in school turned more captivating, thanks to an excellent teacher, I started trying my hands at programming too. Little did I know I would make it my career someday!
-							</p>
+							<h2 class="TabSubHeader">Technology Stack & Tools</h2>
 						</div>
 					</div>
-				</div> -->
-				<!-- END About -->
-				
-				
-				<!--START Timeline-->
-				<div id="timelineDiv" class="col-md-10 col-md-offset-1 section-margin">
-				   <h2 class="TabSubHeader" style="margin-bottom:1em;">Timeline</h2>
-				   <div class="timeline">
-					  <div class="row">
-						 <div class="container container-left col-md-6">
-						 <span class="timeline-arrow-right"></span>
-							<div class="content">
-							   <p class="timeline-year">Now</p>
-							   <p class="timeline-title">Intellect Design Arena</p>
-							   <p class="timeline-desc">Develop various products across the BFSI domain in a result driven agile environment. The web and mobile applications are developed using Java, Android SDK and Cordova.</p>
-							</div>
-						 </div>
-					  </div>
-					  <div class="row">
-						 <div class="container container-right col-md-offset-6 col-md-6">
-						 <span class="timeline-arrow-left"></span>
-							<div class="content">
-							   <p class="timeline-year">2017</p>
-							   <p class="timeline-title">Freelancer</p>
-							   <p class="timeline-desc">Worked on freelance projects while interacting directly with the clients and putting down their visions on canvas in the form of clean codes.</p>
-							</div>
-						 </div>
-					  </div>
-					  <div class="row">
-						 <div class="container container-left col-md-6">
-						 <span class="timeline-arrow-right"></span>
-							<div class="content">
-							   <p class="timeline-year">2016</p>
-							   <p class="timeline-title">Cognizant Technology Solutions</p>
-							   <p class="timeline-desc">Develop and maintain interactive applications while co-ordinating across multiple projects.</p>
-							</div>
-						 </div>
-					  </div>
-				   </div>
-				</div>
-				<!--END Timeline -->
-				<!-- START About -->
-				<!-- <div class="sub-content-div section-margin StoryDiv">
+
 					<div class="row">
-						<div class="col-md-12">
-							<p>
-								Hey, I was advised to keep my options and I did! I chose Electronics and Electrical Engineering for my under-graduation, and perhaps it turned out well, in hindsight; for I discovered where my passion lay. The blend of creativity and logic in programming continued to allure me. I found the few Computer Science subjects vastly more engaging than the rest, and it was then I knew that software development was truly my calling! I acted on it. I taught myself web application development, which was outside my course syllabus and set about pursuing pet projects. Quote Generator was one of them, which I, after graduation, turned into an android application and had it published on Google Play.
-							</p>
-							<div class="section-margin">
-								<div id="card1" class="figure card center-block" onclick="flip(1)">
-									<img id="front1" class="img-responsive" style="width:100%; height:100%;" src="images/QuoteIt_Portfolio.jpg" alt="Quote It"> 
-									<div id="back1" class="figcaption">
-										<p> Android app to store and view customized quotes on the go!</p><br/>
-										<a target="_blank"  href="https://play.google.com/store/apps/details?id=test.example.quoteit">Start quoting!</a>
-									</div>
+						<div class="col-md-6">
+							<div class="row vertical-center card-container">
+								<div class=" cards">
+									<img src="assets/images/ico-angular.png" alt="LinkedIn">
+									<p class="font-xs">Angular</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-java.png" alt="LinkedIn">
+									<p class="font-xs">Java</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-git.png" alt="LinkedIn">
+									<p class="font-xs">Git</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-sass.png" alt="LinkedIn">
+									<p class="font-xs">SASS</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-bootstrap.png" alt="LinkedIn">
+									<p class="font-xs">Bootstrap</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-android-sdk.png" alt="LinkedIn">
+									<p class="font-xs">Andriod SDK</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-ionic.png" alt="Ionic">
+									<p class="font-xs">Ionic</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-cordova.png" alt="Cordova">
+									<p class="font-xs">Cordova</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-html.png" alt="HTML5">
+									<p class="font-xs">HTML5</p>
+								</div>
+							</div>
+						</div>
+						<div class="col-md-6">
+							<div class="row vertical-center card-container">
+								<div class=" cards">
+									<img src="assets/images/ico-vs-code.png" alt="LinkedIn">
+									<p class="font-xs">VS Code</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-android-studio.png" alt="LinkedIn">
+									<p class="font-xs">Android Studio</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-eclipse.png" alt="LinkedIn">
+									<p class="font-xs">Eclipse</p>
+								</div>
+								<div class=" cards">
+									<img src="assets/images/ico-adobe-xd.png" alt="LinkedIn">
+									<p class="font-xs">Adobe XD</p>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+				</div>
+				<!-- END - Technology Stack -->
+
+				<!--START Timeline-->
+				<div id="timelineDiv" class="section-margin" style="display:none;">
+					<h2 class="TabSubHeader" style="margin-bottom:1em;">Timeline</h2>
+					<div class="timeline">
+						<div class="row">
+							<div class="container container-left col-md-6">
+								<span class="timeline-arrow-right"></span>
+								<div class="content">
+									<p class="timeline-year">Now</p>
+									<img class="img-icon" src="assets/images/intellect-dot.svg"
+										alt="Intellect Design Arena">
+									<p class="timeline-title">Intellect Design Arena</p>
+									<p class="timeline-desc grey-text">Product Engineer</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="container container-right col-md-offset-6 col-md-6">
+								<span class="timeline-arrow-left"></span>
+								<div class="content">
+									<p class="timeline-year">2017</p>
+									<p class="timeline-title">Freelancer</p>
+									<p class="timeline-desc">Worked on freelance projects while interacting directly
+										with the clients and putting down their visions on canvas in the form of clean
+										codes.</p>
+								</div>
+							</div>
+						</div>
+						<div class="row">
+							<div class="container container-left col-md-6">
+								<span class="timeline-arrow-right"></span>
+								<div class="content">
+									<p class="timeline-year">2014</p>
+									<p class="timeline-title">Cognizant Technology Solutions</p>
+									<p class="timeline-desc">
+										Boostrapped my industry career with CTS.
+										Develop and maintain interactive applications while
+										co-ordinating across multiple projects.</p>
 								</div>
 							</div>
 						</div>
 					</div>
-				</div> -->
-				<!-- END About -->
-				<!-- START About -->
-				<!-- <div class="sub-content-div section-margin StoryDiv">
-					<div class="row">
-						<div class="col-md-12">
-							<p>
-								Delhi-based Learning Company, TestFormula Education, offered a flexible, WFH internship opportunity during my fourth semester in college, which I delightfully accepted. Exposure on coding web applications continued through my days at Cognizant Technology Solutions, where I was placed during my college’s campus recruitment drive. Simultaneously I started exploring android applications. Curiosity got the better of me and I, in the course of an year, self-taught Android Studio, undertook an internship on developing android applications and consulted on freelancing basis, fulltime. In a year, I landed an offer with Intellect Design Arena as Consultant, where I primarily build mobile applications for the BFSI domain.
-							</p>
-						</div>
-					</div>
-				</div> -->
-				<!-- END About -->
+				</div>
+				<!--END Timeline -->
+
 				<!--Languages and Areas of Expertise-->
-				<div class="sub-content-div" id="ExpertiseDiv">
-					<div class="col-md-6 text-left section-margin bottommargin">
-						<h2 class="TabSubHeader">Areas of Expertise</h2>
-						<ul>
-							<li>Ideate, Design and Build applications</li>
-							<li>Android Application Development</li>
-							<li>Android UI Design and Prototyping</li>
-							<li>Web Application Development</li>
-						</ul>
-					</div>
+				<div id="ExpertiseDiv">
 					<div class="col-md-6 text-left section-margin bottommargin">
 						<h2 class="TabSubHeader">Spoken Languages</h2>
-						<ul>
-							<li>English <i>(Academic proficiency)</i></li>
-							<li>Tamil <i>(Native Tongue)</i></li>
-							<li>French <i>(Un petit peu)</i></li>
-							<li>Hindi <i>(Survivable)</i></li>
+						<ul class="custom-list">
+							<li>
+								<span class="glyphicon glyphicon-check grey-text"></span>
+								English <span class="font-sm"> - Academic proficiency</span></li>
+							<li>
+								<span class="glyphicon glyphicon-check grey-text"></span>
+								Tamil <span class="font-sm"> - Native Tongue</span></li>
+							<li>
+								<span class="glyphicon glyphicon-check grey-text"></span>
+								French <span class="font-sm"> - Un petit peu</span></li>
+							<li>
+								<span class="glyphicon glyphicon-check grey-text"></span>
+								Hindi <span class="font-sm"> - Survivable</span></li>
 						</ul>
+					</div>
+
+					<div class="col-md-6 section-margin bottommargin">
+						<h2 class="TabSubHeader">Volunteering</h2>
+						<div class="row vertical-center card-container">
+							<div class=" cards">
+								<img src="assets/images/ico-bci.png" alt="LinkedIn">
+								<p class="font-xs">Blue Cross of India</p>
+							</div>
+							<div class=" cards">
+								<img src="assets/images/ico-sadhana-forest.png" alt="LinkedIn">
+								<p class="font-xs">Sadhana Forests - Auroville</p>
+							</div>
+						</div>
 					</div>
 				</div>
 				<!--Story - Split Easy-->
-				<div class="sub-content-div bottommargin StoryDiv">
+				<div class="sub-content-div StoryDiv" style="display:none;">
 					<h2 class="TabSubSectionHeader col-md-12">Two heads are better than one!</h2>
 					<div class="row">
 						<div class="col-md-12">
 							<p>
-								Being a Coder is liberating indeed! It makes you feel you can devise solutions to every problem at hand. Once, after a long day in Auroville, Pondicherry, my sister and I sat down to settle up the expenses between the two of us. Recollection turned gruelling as we had been postponing the calculations for quite some time. I immediately wanted to design an algorithm that could take care of the split up based on data fed over a period of time. So my sister, an accountant by qualification, and I sat down to work, and in a while we had a neat java program that could take inputs from the console and perform the heavy lifting. From there it turned into an online mobile app, which now has 300+ downloads and 4.9 rating on Google Play
+								Being a Coder is liberating indeed! It makes you feel you can devise solutions to every
+								problem at hand. Once, after a long day in Auroville, Pondicherry, my sister and I sat
+								down to settle up the expenses between the two of us. Recollection turned gruelling as
+								we had been postponing the calculations for quite some time. I immediately wanted to
+								design an algorithm that could take care of the split up based on data fed over a period
+								of time. So my sister, an accountant by qualification, and I sat down to work, and in a
+								while we had a neat java program that could take inputs from the console and perform the
+								heavy lifting. From there it turned into an online mobile app, which now has 300+
+								downloads and 4.9 rating on Google Play
 							</p>
 							<div class="section-margin">
 								<div id="card1" class="figure card center-block" onclick="flip(1)">
-									<img id="front1" class="img-responsive" style="width:100%; height:100%;" src="images/split_easy.jpg" alt="Split Easy"> 
+									<img id="front1" class="img-responsive" style="width:100%; height:100%;"
+										src="assets/images/split_easy.jpg" alt="Split Easy">
 									<div id="back1" class="figcaption">
-										<p> An android app to split up the shared expenses in a trip.</p><br/>
-										<a target="_blank"  href="https://play.google.com/store/apps/details?id=com.monfee.spliteasy">Download app!</a>
+										<p> An android app to split up the shared expenses in a trip.</p><br />
+										<a target="_blank"
+											href="https://play.google.com/store/apps/details?id=com.monfee.spliteasy">Download
+											app!</a>
 									</div>
 								</div>
 							</div>
 
-							<p>Self-learning and pet projects are what defines me. At leisure, I am now working on another android application to abet brides and grooms plan their once-in-a-lifetime milestone. Lips sealed for now! Keep an eye on this space for updates y’all…!</p>
+							<p>Self-learning and pet projects are what defines me. At leisure, I am now working on
+								another android application to abet brides and grooms plan their once-in-a-lifetime
+								milestone. Lips sealed for now! Keep an eye on this space for updates y’all…!</p>
 						</div>
 					</div>
 				</div>
-				
+
 			</div>
-		</section><!--Contact-->
+		</section>
+		<!--Contact-->
 		<section class="invisible" id="contactSlide">
 			<div class="container-fluid sub-content-div" id="contactdiv">
 				<h2 class="TabHeader">Get in Touch</h2>
@@ -262,20 +352,23 @@
 					<div class="col-md-12">
 						<p>Find me on the web, or get in touch. E-mail or LinkenIn works best.</p><br>
 						<div class="contact-btns col-md-6 col-md-offset-3">
-							<a class="col-xs-6 col-md-3" href="https://linkedin.com/in/evan-monfee" target="_blank" title="LinkedIn">
-								<img src="images/linkedin.png" alt="LinkedIn">
-							</a> 
+							<a class="col-xs-6 col-md-3" href="https://linkedin.com/in/evan-monfee" target="_blank"
+								title="LinkedIn">
+								<img src="assets/images/linkedin.png" alt="LinkedIn">
+							</a>
 							<a id="contactByEmail" class="col-xs-6 col-md-3" href="#" title="Send Email">
-								<img src="images/gmail.png" alt="Gmail">
-							</a> 
-							<a class="col-xs-6 col-md-3" href="https://play.google.com/store/apps/developer?id=Monfee" target="_blank" title="Google Play">
-								<img src="images/google-play.png" alt="Google Play">
-							</a> 
-							<a class="col-xs-6 col-md-3" href="https://dribbble.com/evanmonfee" target="_blank" title="Dribble">
-								<img src="images/dribble.png" alt="Dribble Account">
+								<img src="assets/images/gmail.png" alt="Gmail">
+							</a>
+							<a class="col-xs-6 col-md-3" href="https://play.google.com/store/apps/developer?id=Monfee"
+								target="_blank" title="Google Play">
+								<img src="assets/images/google-play.png" alt="Google Play">
+							</a>
+							<a class="col-xs-6 col-md-3" href="https://dribbble.com/evanmonfee" target="_blank"
+								title="Dribble">
+								<img src="assets/images/dribble.png" alt="Dribble Account">
 							</a>
 							<!-- <a class="col-xs-6 col-md-3" href="https://www.behance.net/monfee3333fb64" target="_blank" title="Behance">
-								<img src="images/behance.png" alt="Behance">
+								<img src="assets/images/behance.png" alt="Behance">
 							</a> -->
 						</div>
 					</div>
@@ -284,97 +377,105 @@
 		</section>
 	</div>
 	<script>
-var myIndex = 0;
-	$('#Portfolio').click(function(){
-	   var nextSlide = $('#slide');
-	   if($('#aboutdiv').hasClass('visible'))
-	   {
-	       var currentSlide = $('#aboutdiv');
-	       currentSlide.removeClass(); 
-	       currentSlide.addClass('invisible');
-	       currentSlide.addClass('slide-out-left');
-	       nextSlide.removeClass();
-	       nextSlide.addClass('visible');
-	       nextSlide.addClass('slide-in-from-right');          
-	   }
-	   if($('#contactSlide').hasClass('visible'))
-	   {
-	       var currentSlide = $('#contactSlide');
-	       currentSlide.removeClass(); 
-	       currentSlide.addClass('invisible');
-	       currentSlide.addClass('slide-out-right');
-	       nextSlide.removeClass();
-	       nextSlide.addClass('visible');
-	       nextSlide.addClass('slide-in-from-left');           
-	   }
-	});
+		var myIndex = 0;
+		window.onscroll = function () { stickNav() };
 
-	$('#Contact').click(function(){
-	   var nextSlide = $('#contactSlide');
-	   if($('#aboutdiv').hasClass('visible'))
-	   {
-	       var currentSlide = $('#aboutdiv');
-	       currentSlide.removeClass(); 
-	       currentSlide.addClass('invisible');
-	       currentSlide.addClass('slide-out-left');
-	       nextSlide.removeClass();
-	       nextSlide.addClass('visible');
-	       nextSlide.addClass('slide-in-from-right');          
-	   }
-	   if($('#slide').hasClass('visible'))
-	   {
-	       var currentSlide = $('#slide');
-	       currentSlide.removeClass(); 
-	       currentSlide.addClass('invisible');
-	       currentSlide.addClass('slide-out-left');
-	       nextSlide.removeClass();
-	       nextSlide.addClass('visible');
-	       nextSlide.addClass('slide-in-from-right');          
-	   }
-	   });
+		var navbar = $('.sticky-navbar');
+		var sticky = navbar.offset().top
 
-	$('#Home').click(function(){
-	   var nextSlide = $('#aboutdiv');
-	   if($('#slide').hasClass('visible'))
-	   {
-	       var currentSlide = $('#slide');
-	       currentSlide.removeClass(); 
-	       currentSlide.addClass('invisible');
-	       currentSlide.addClass('slide-out-right');
-	       nextSlide.removeClass();
-	       nextSlide.addClass('visible');
-	       nextSlide.animate({"left":"-1000px"}, "slow").addClass('slide-in-from-left');           
-	   }
-	       if($('#contactSlide').hasClass('visible'))
-	   {
-	       var currentSlide = $('#contactSlide');
-	       currentSlide.removeClass(); 
-	       currentSlide.addClass('invisible');
-	       currentSlide.addClass('slide-out-right');
-	       nextSlide.removeClass();
-	       nextSlide.addClass('visible');
-	       nextSlide.animate({"left":"-1000px"}, "slow").addClass('slide-in-from-left');           
-	   }   
-	   });
-	   $('a#contactByEmail').on('click',function(){
-       	window.location.href = "mailto:even.monfee@gmail.com?subject=Mail%20from%20evanmonfee.com";
-    	});
+		function stickNav() {
+			if (window.pageYOffset >= sticky) {
+				navbar.addClass("sticky")
+			} else {
+				navbar.removeClass("sticky");
+			}
+		}
 
-	   if(/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
-	           document.write('<script src="Script_Portfolio.js"><\/script>');
+		$('#Portfolio').click(function () {
+			var nextSlide = $('#slide');
+			if ($('#aboutdiv').hasClass('visible')) {
+				var currentSlide = $('#aboutdiv');
+				currentSlide.removeClass();
+				currentSlide.addClass('invisible');
+				currentSlide.addClass('slide-out-left');
+				nextSlide.removeClass();
+				nextSlide.addClass('visible');
+				nextSlide.addClass('slide-in-from-right');
+			}
+			if ($('#contactSlide').hasClass('visible')) {
+				var currentSlide = $('#contactSlide');
+				currentSlide.removeClass();
+				currentSlide.addClass('invisible');
+				currentSlide.addClass('slide-out-right');
+				nextSlide.removeClass();
+				nextSlide.addClass('visible');
+				nextSlide.addClass('slide-in-from-left');
+			}
+		});
 
-	   if($.browser.mozilla) { 
-	           document.write('<script src="Script_Portfolio.js"><\/script>');
-	       }
-	       
-	   if (screen.width < 980) {
-	       document.write('<script src="Script_Portfolio.js"><\/script>');
-	   }
+		$('#Contact').click(function () {
+			var nextSlide = $('#contactSlide');
+			if ($('#aboutdiv').hasClass('visible')) {
+				var currentSlide = $('#aboutdiv');
+				currentSlide.removeClass();
+				currentSlide.addClass('invisible');
+				currentSlide.addClass('slide-out-left');
+				nextSlide.removeClass();
+				nextSlide.addClass('visible');
+				nextSlide.addClass('slide-in-from-right');
+			}
+			if ($('#slide').hasClass('visible')) {
+				var currentSlide = $('#slide');
+				currentSlide.removeClass();
+				currentSlide.addClass('invisible');
+				currentSlide.addClass('slide-out-left');
+				nextSlide.removeClass();
+				nextSlide.addClass('visible');
+				nextSlide.addClass('slide-in-from-right');
+			}
+		});
 
-	   if(navigator.userAgent.toLowerCase().indexOf('firefox') > -1){
-	       document.write('<script src="Script_Portfolio.js"><\/script>');
-	   }   	  
-	   
+		$('#Home').click(function () {
+			var nextSlide = $('#aboutdiv');
+			if ($('#slide').hasClass('visible')) {
+				var currentSlide = $('#slide');
+				currentSlide.removeClass();
+				currentSlide.addClass('invisible');
+				currentSlide.addClass('slide-out-right');
+				nextSlide.removeClass();
+				nextSlide.addClass('visible');
+				nextSlide.animate({ "left": "-1000px" }, "slow").addClass('slide-in-from-left');
+			}
+			if ($('#contactSlide').hasClass('visible')) {
+				var currentSlide = $('#contactSlide');
+				currentSlide.removeClass();
+				currentSlide.addClass('invisible');
+				currentSlide.addClass('slide-out-right');
+				nextSlide.removeClass();
+				nextSlide.addClass('visible');
+				nextSlide.animate({ "left": "-1000px" }, "slow").addClass('slide-in-from-left');
+			}
+		});
+		$('a#contactByEmail').on('click', function () {
+			window.location.href = "mailto:even.monfee@gmail.com?subject=Mail%20from%20evanmonfee.com";
+		});
+
+		if (/MSIE \d|Trident.*rv:/.test(navigator.userAgent))
+			document.write('<script src="Script_Portfolio.js"><\/script>');
+
+		if ($.browser.mozilla) {
+			document.write('<script src="Script_Portfolio.js"><\/script>');
+		}
+
+		if (screen.width < 980) {
+			document.write('<script src="Script_Portfolio.js"><\/script>');
+		}
+
+		if (navigator.userAgent.toLowerCase().indexOf('firefox') > -1) {
+			document.write('<script src="Script_Portfolio.js"><\/script>');
+		}
+
 	</script>
 </body>
+
 </html>
