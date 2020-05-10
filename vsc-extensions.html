@@ -1,0 +1,378 @@
+<!-- <app-blog-navbar></app-blog-navbar> -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <title> Evan Monfee </title>
+
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="assets/css/styles-web.css" rel="stylesheet" type="text/css">
+  <link href="assets/css/styles-mobile.css" rel="stylesheet" type="text/css">
+
+  <link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <link href="assets/css/blog.css" rel="stylesheet" type="text/css">
+
+  <link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+  <link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet' type='text/css'>
+  <link href="https://fonts.googleapis.com/css2?family=Work+Sans" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: grey;">
+  <div id="AllContent">
+
+    <!--Logo-->
+    <div id="logodiv" class="container-fluid center-block" style="background-color: black;">
+      <a id="Logo">
+        <img class="img-responsive center-block" src="assets/images/monfee_logo.jpg" alt="Logo" />
+      </a>
+    </div>
+
+    <!--Navigation-->
+    <nav class="navbar navbar-inverse sticky-navbar">
+      <div id="header" class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li><a id="Back" href="blog.html" title="Back to blog">
+                <span class="glyphicon glyphicon-arrow-left"></span> Blog
+              </a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <div class="container-fluid blog-post-container">
+      <div class="row">
+        <div class="col-md-10 blog-card col-md-offset-1">
+          <div class="row">
+            <div class="col-md-12 blog-author">
+              <img src="assets/images/Blog_Images/blog-author-thumbnail.jpg">
+              <p>November 20, 2019</p>
+            </div>
+          </div>
+
+          <div class="row">
+            <div class="col-md-12">
+              <h3 class="blog-page-title">8 VS Code extensions you didn't know you needed</h3>
+            </div>
+          </div>
+
+
+          <div class="row">
+            <div class="col-md-12 blog-content text-left">
+              <p>Adding extensions to your IDE is a vital step for developers as it can save up a lot of time, automate
+                the
+                mundane, and
+                even make your screen pleasant by giving it an aesthetic visual rhythm.</p>
+
+              <p>
+                Visual Studio Code offers a wide range of extensions that can be downloaded and installed - either for
+                the
+                current
+                workspace or globally. You can open the marketplace in VS Code by pressing 'Shift + Ctrl + X'.
+              </p>
+              <p>Listed below are 8 of the must-have VS Code extensions for angular UI development.</p>
+              <br />
+              <p class="text-center">
+                <img src="assets/images/Blog_Images/programmer-coding.svg" width='70%'>
+              </p>
+              <br />
+
+              <div>
+                <!-- START - GitLens -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens" alt="VS Extension Link"
+                    target=”_blank”>
+                    <h4 class="blog-block-title">GitLens - Git supercharged:</h4>
+                  </a>
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=eamodio.gitlens"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-gitlens.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>5,103,691 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>4.9 out of 5 (364 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p>A powerful extension to VS Code's built-in version control capabilities.</p>
+                  <p>Check the edit history by the line, compare your working code with different branches in the origin
+                    and
+                    so on.</p>
+                  <p><img src="assets/images/Blog_Images/vs-code-extensions/vsc-gitlens-1.png"
+                      class="img-center img-responsive">
+                  </p>
+                  <br />
+                </div>
+                <!-- END - GitLens -->
+
+                <!-- START - Bracket Pair Colorizer -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2"
+                    target=”_blank”>
+                    <h4 class="blog-block-title">Bracket Pair Colorizer:</h4>
+                  </a>
+
+
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer-2"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/extension-bracket.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>862,255 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>4.4 out of 5 (70 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>All matching colors to your brackets in the code.</p>
+                  <p>'Colorize' your matching brackets using this extension. The matching brackets in your code are
+                    automatically given
+                    matching colors thus mitigating the missing brackets problem that coders often face. It also adds a
+                    little bit of color
+                    to the IDE. The users can also fine-tune the extension with the preferred colors set and maintain an
+                    aesthetic visual
+                    rhythm.</p>
+                  <p><img src="assets/images/Blog_Images/vs-code-extensions/extension-bracket.png"
+                      class="img-center img-responsive">
+                  </p>
+                  <br />
+                </div>
+                <!-- END - Bracket Pair Colorizer -->
+
+                <!-- START - Material Icons -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"
+                    alt="VS Extension Link" target=”_blank”>
+                    <h4 class="blog-block-title">Material Icons Theme:</h4>
+                  </a>
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=PKief.material-icon-theme"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-material.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>4,135,675 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>4.9 out of 5 (142 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>Popular and highly rated. Add an appealing, material-theme based icons to your files. Not only are
+                    the
+                    icons
+                    minimalistic and well-crafted, but it also vastly improves your navigation and flow within the IDE.
+                  </p>
+                  <p>Popular and highly rated, with users even asking it to be made as the default icons set for VS
+                    Code.
+                  </p>
+                  <p><img src="assets/images/Blog_Images/vs-code-extensions/vsc-material-1.png"
+                      class="img-center img-responsive">
+                  </p>
+                  <br />
+                </div>
+                <!-- END - Material Icons -->
+
+                <!-- START - Code Spell Checker -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
+                    alt="VS Extension Link" target=”_blank”>
+                    <h4 class="blog-block-title">Code Spell Checker</h4>
+                  </a>
+
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-spell-check.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>1,334,826 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>4.3 out of 5 (122 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p>A coder once created a class file named ProgramCataloug instead of ProgramCatalog - and so it
+                    remained
+                    for years!
+                    Currently, everyone has gotten so used to it and Cataloug seems like the new normal!</p>
+                  <p>Add this spell checker to your IDE and save your code from spelling errors. This extension even
+                    understands CamelCase.</p>
+                  <p><img src="assets/images/Blog_Images/vs-code-extensions/vsc-spell-check-1.png"
+                      class="img-center img-responsive">
+                    <br />
+                </div>
+                <!-- END - Code Spell Checker -->
+
+                <!-- START - TypeScript Toolbox -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=DSKWRK.vscode-generate-getter-setter"
+                    alt="VS Extension Link" target=”_blank”>
+                    <h4 class="blog-block-title">TypeScript Toolbox:</h4>
+                  </a>
+
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=DSKWRK.vscode-generate-getter-setter"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-typescript.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>140,360 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>3.4 out of 5 (21 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>A typescript handyman for coding. Add and Optimize imports. Dynamically create a constructor based
+                    on
+                    private
+                    variables
+                    - Particularly useful for eclipse IDE users who are used to generating bean classes using the
+                    built-in
+                    tool.</p>
+                  <br />
+                </div>
+                <!-- END - TypeScript Toolbox -->
+
+                <!-- START - Better Comments -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments"
+                    alt="VS Extension Link" target=”_blank”>
+                    <h4 class="blog-block-title">Better Comments</h4>
+                  </a>
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=aaron-bond.better-comments"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-comments.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>862,154 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>4.4 out of 5 (70 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Comments are vital to understanding the code written by varied coders with varied perspectives.
+                    Improve
+                    your commenting
+                    skills by adding this extension. If you don't use helpers like TODO, '!' and '?' in your comments,
+                    you
+                    will find it
+                    compelling to use once you install this plugin and see how sorted out your comments look. The helper
+                    tags are also
+                    completely customizable.</p>
+                  <br />
+                </div>
+                <!-- END - Better Comments -->
+
+                <!-- START - Prettier Formatter -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                    alt="VS Extension Link" target=”_blank”>
+                    <h4 class="blog-block-title">Prettier Formatter</h4>
+                  </a>
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-prettier.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>795,085 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>4.8 out of 5 (73 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+                  <p>Calling itself an 'opinionated' code formatter, this extension enforces a consistent layout to your
+                    code even when
+                    collaborating across teams. Also, VS Code does not format stylesheets by default. Enable this and
+                    let
+                    the mundane part
+                    get automated.</p>
+                  <p>Once installing make sure you enable 'Format on Save' from VS Code's settings.</p>
+                  <br />
+                </div>
+                <!-- END - Prettier Formatter -->
+
+                <!-- START - Auto Rename Tag -->
+                <div>
+                  <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
+                    alt="VS Extension Link" target=”_blank”>
+                    <h4 class="blog-block-title">Auto Rename Tag:</h4>
+                  </a>
+                  <div class="padding-sm">
+                    <div class="row vertical-center">
+                      <div class="col-md-4 col-md-offset-1 text-right">
+                        <a href="https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-rename-tag"
+                          alt="VS Extension Link" target=”_blank”>
+                          <img src="assets/images/Blog_Images/vs-code-extensions/vsc-auto-rename.jpg" class="img-sm">
+                        </a>
+                      </div>
+                      <div class="col-md-6">
+                        <p class="grey-text"><i class="glyphicon glyphicon-save"></i>2,827,089 installs.</p>
+                        <p class="grey-text"><i class="glyphicon glyphicon-thumbs-up"></i>3.1 out of 5 (100 ratings)</p>
+                      </div>
+                    </div>
+                  </div>
+
+                  <p>Want to change span to p tag? No more hunting for matching end tags.</p>
+                  <p>This powerful extension automatically takes care of the renaming the matching end tags and saves up
+                    your time. You can
+                    dynamically watch the end tag renaming itself as you renaming the start tag. Powerful and a
+                    must-have!
+                  </p>
+                  <br />
+                </div>
+                <!-- END - Auto Rename Tag -->
+              </div>
+
+              <!-- START - Blog Footer -->
+              <div class="row">
+                <div class="col-md-12">
+                  <br /><br />
+                  <p style="font-size:80%; color: #d2a479;" class="text-left">Posted on: November 20, 2019</p>
+                </div>
+              </div>
+              <!-- END - Blog Footer -->
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
