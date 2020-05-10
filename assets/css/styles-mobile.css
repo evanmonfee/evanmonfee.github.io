@@ -1,7 +1,5 @@
 /* Smartphones (portrait and landscape) ----------- */
-@media only screen 
-and (min-device-width : 320px) 
-and (max-device-width : 480px) 
+@media screen and (max-width: 600px)
 {
 	
 	body
@@ -9,12 +7,16 @@ and (max-device-width : 480px)
 		background: linear-gradient(235deg, #c6cecc, #0c0d0d);
 	}
 
+	.container-body{
+		width: 100%;
+	}
+
 #AllContent
 {
 	width:100%;
 	min-height:100vh;
 	font-family: "Source Code Pro", Georgia;
-  	font-size: 16px;
+  	/* font-size: 16px; */
 	letter-spacing: 0.4px;
 	color: #e6ccb3;	
 	background:black;
@@ -41,16 +43,26 @@ and (max-device-width : 480px)
   	color: #d2a479;
 }
 
+.vertical-center {
+	justify-content: center;
+}
+
 
 .program
 {
 	text-align:left;
 }
 
-#PortfolioDesc
-{
-	width:85%;	
+.section-quote {
+    margin-bottom: 1em;
 }
+
+.sticky {
+    position: fixed !important;
+    top: 0;
+    width: 100%;
+	z-index: 1;
+}	
 
 
 #contactdiv

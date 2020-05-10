@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title> Evan Monfee </title>
+
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<link href="assets/css/styles-web.css" rel="stylesheet" type="text/css">
+	<link href="assets/css/styles-mobile.css" rel="stylesheet" type="text/css">
+
+	<link type="text/css" rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link href="assets/css/blog.css" rel="stylesheet" type="text/css">
+
+	<link href='https://fonts.googleapis.com/css?family=Source+Code+Pro' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Abel' rel='stylesheet' type='text/css' />
+	<link href='https://fonts.googleapis.com/css?family=Lato:100,300italic,400,700,900' rel='stylesheet'
+		type='text/css'>
+	<link href="https://fonts.googleapis.com/css2?family=Work+Sans" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600&display=swap" rel="stylesheet">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.2/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<body style="background-color: grey;">
+	<div id="AllContent">
+
+		<!--Logo-->
+		<div id="logodiv" class="container-fluid center-block" style="background-color: black;">
+			<a id="Logo">
+				<img class="img-responsive center-block" src="assets/images/monfee_logo.jpg" alt="Logo" />
+			</a>
+		</div>
+
+		<!--Navigation-->
+		<nav class="navbar navbar-inverse sticky-navbar">
+			<div id="header" class="container-fluid">
+				<div class="navbar-header">
+					<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+						<span class="icon-bar"></span>
+					</button>
+				</div>
+				<div class="collapse navbar-collapse" id="myNavbar">
+					<ul class="nav navbar-nav">
+						<li><a id="Back" href="blog.html" title="Back to blog">
+								<span class="glyphicon glyphicon-arrow-left"></span> Blog
+							</a></li>
+					</ul>
+				</div>
+			</div>
+		</nav>
+
+		<!--START - Blog Content-->
+		<div class="container-fluid blog-post-container">
+			<div class="row">
+				<div class="col-md-10 blog-card col-md-offset-1">
+					<div class="row">
+						<div class="col-md-12 blog-author">
+							<img src="assets/images/Blog_Images/blog-author-thumbnail.jpg">
+							<p>January 20, 2019</p>
+						</div>
+					</div>
+
+					<div class="row">
+						<div class="col-md-12">
+							<h3 class="blog-page-title">Syntactically Awesome Styles</h3>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-md-12 blog-content text-left">
+							<p class="text-center">
+								<img src="assets/images/Blog_Images/programmer-laptop.jpg" width='70%'>
+							</p>
+							<p>
+								SASS (which stands for Syntactically Awesome Style Sheets) is an extension to CSS. It
+								contains all the basic
+								functionality of CSS while also super-charging it further with several other features.
+							</p>
+
+							<p>SASS brings in the concepts of object-oriented stylesheets into place with variables,
+								conditionals, inheritance, and
+								methods. Therefore, it makes more sense and is easier to adopt for those with an
+								object-orient programming background.</p>
+							<br />
+							<div>
+								<h4 class="blog-block-title">Is it SASS or SCSS?</h4>
+								<p>Simple answer - Both!</p>
+								<p>There are two syntax available for Sass which further leads to two stylesheet
+									extensions
+									- .scss and .sass
+								</p>
+
+								<p>The first, known as SCSS (Sassy CSS) is the newer syntax and as the name indicates is
+									basically an extension of CSS. In other words, every valid CSS stylesheet is also a
+									valid SCSS stylesheet. They have the extension of .scss
+								</p>
+								<p>The second syntax, unlike CSS uses indentation to denote nesting and is also referred
+									to
+									as the 'indented syntax' (or sometimes just "Sass").
+									Files using this syntax have the .sass extension.
+								</p>
+							</div>
+							<br />
+							<div>
+								<div class="row">
+									<div class="col-md-12 text-left">
+										<h3 class="blog-block-title">Object oriented you say?</h3>
+										<br />
+										<p><img class="img-responsive center-block"
+												src="assets/images/Blog_Images/scss-infographic.png"
+												alt="SASS infographic"></p>
+										<br />
+										<ol>
+											<li>
+												<p>Variables:</p>
+											</li>
+											<p>SCSS allows the use of variables while defining the styles. This will
+												ouput CSS with
+												the
+												original
+												values as defined in the variables. SASS supports the following 4
+												datatypes:
+												1. Numbers
+												2. Strings
+												3. Colors
+												4. Boolean</p><br>
+											<div class="row">
+												<div class="col-md-5">
+													<pre><code>
+body {
+	color: $colorTextBody;
+	text-align: center;
+	margin: auto;
+	font-size: $fontBody;
+	font-family: $fontFamily;
+	padding: $spacingLg;
+}</code></pre>
+												</div>
+												<div class="col-md-2"></div>
+												<div class="col-md-5">
+													<pre><code>
+body {
+	color: #000;
+	text-align: center;
+	margin: auto;
+	font-size: 14px;
+	font-family: "Open Sans";
+	padding: 15px;
+}</code></pre>
+												</div>
+
+												<div class="row col-md-12">
+													<br />
+													<li>
+														<p>Inheritance:</p>
+													</li>
+													<p>@extend is a feature of Sass that allows classes to extend other
+														classes
+														thereby
+														inheriting its
+														styles. On compilation, the classes appear as a comma separated
+														list in CSS
+														as
+														shown
+														below:</p><br>
+												</div>
+												<div class="row">
+													<div class="col-md-5">
+														<pre><code>
+.btn-primary{
+	color: $colorTextButton;
+	padding: $spacingMd;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.btn-secondary{
+	@extend .cloBtnPrimary;
+	color:$colorBlack;
+}</code></pre>
+													</div>
+													<div class="col-md-2"></div>
+													<div class="col-md-5">
+														<pre><code>
+.btn-primary, 
+.btn-secondary {
+	color: #FFF;
+	padding: 15px;
+	cursor: pointer;
+	text-transform: uppercase;
+}
+.btn-secondary {
+	color: #000;
+}</code></pre>
+													</div>
+												</div>
+
+												<div class="row col-md-12">
+													<br />
+													<li>
+														<p>Control Directives:</p>
+													</li>
+													<p>SASS supports control directives like @if, @each and @while that
+														provide flow
+														and
+														logic in the
+														stylesheets.</p><br>
+												</div>
+												<div class="row">
+													<div class="col-md-10">
+														<pre><code>
+$footerRequired: true;
+	.footer-container{
+	@if ($footerRequired) {
+		background-color: darken($colorBackground, 10%);
+		color: $colorTextBody;
+		padding: $spacingMd;
+	}
+	@else {
+		display:none;
+	}
+}</code></pre>
+													</div>
+												</div>
+
+												<div class="row col-md-12">
+													<br />
+													<li>
+														<p>Functions:</p>
+													</li>
+													<p>With SASS 3.1.0 functions was introduced that can accept
+														parameters and
+														return a
+														value which
+														can be used across the stylesheets. The output of a functions
+														will be a
+														single
+														value and not a
+														rule..</p><br>
+												</div>
+												<div class="row">
+													<div class="col-md-6">
+														<pre><code>
+@function getWidth ($percent) {
+	@return 100% / $percent
+	}
+	
+width: getWidth(2);</code></pre>
+
+													</div>
+												</div>
+										</ol>
+
+									</div>
+								</div>
+
+								<hr>
+								<div class="row">
+									<div class="col-md-12 text-left">
+										<h3 class="blog-block-title">Okay, so what is the downside? </h3>
+										<p>Before you jump right to it and start migrating your code, consider the
+											following:
+										</p>
+
+										<ul type="disc">
+											<li>Pre-processor dependent (i.e.) code has to be compiled first.</li>
+											<li>WYSIWYG Chrome: Styles cannot be added from Chrome Inspector tools.
+												Using CSS,
+												Chrome Inspector
+												tools acts more like an WYSIWUG editor with effects of style changes
+												seen
+												immediately. When using SASS in the application, the styles will have to
+												be
+												first
+												added as CSS in Chrome, tested, and later on added as SASS styles to the
+												application
+												and verified again.
+												While this isn't much, it might need some getting used to if you use
+												Chrome as a
+												WYSIWYG tool for styles development.</li>
+										</ul>
+
+									</div>
+								</div>
+
+							</div>
+							<br /><br>
+							<!-- START - Blog Footer -->
+							<div class="row">
+								<div class="col-md-12 blog-content text-left">
+									<p style="font-size:80%; color: #d2a479;" class="text-left">Posted on: January 20,
+										2019
+									</p>
+								</div>
+							</div>
+							<!-- END - Blog Footer -->
+
+						</div>
+					</div>
+					<br />
+
+				</div>
+			</div>
+		</div>
+		<!--END - Blog Content-->
+
+	</div>
+	<script src="assets/js/main.js"></script>
+</body>
+
+</html>
